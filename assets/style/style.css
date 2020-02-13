@@ -1,0 +1,173 @@
+/*Add default style*/
+@font-face {
+    font-family: iran_sans;
+    src: local("IranSANS"),
+    url(../font/normal/IRANSansWeb.ttf) format("truetype"),
+    url(../font/normal/IRANSansWeb.woff) format("woff"),
+    url(../font/normal/IRANSansWeb.woff2) format("woff2"),
+    url(../font/normal/IRANSansWeb.eot?#iefix) format("embedded-opentype");
+    font-weight: 400;
+}
+.d_f{
+    display: flex;
+}
+
+/*@font-face {*/
+/*    font-family: iran_sans_num;*/
+/*    src: url(../font/normal/sans_num.woff2);*/
+/*    font-weight: 400;*/
+/*}*/
+* {
+    font-size: 13px;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: "iran_sans_num", "iran_sans";
+}
+
+a,
+a:hover,
+a:focus {
+    color: unset;
+    text-decoration: none;
+    outline: none;
+
+    /*display: flex*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 0;
+    /*font-family: iranSANS, BYekan, arial;*/
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    direction: ltr !important;
+}
+
+body {
+    height: 100vh;
+    background: #41424e;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Header*/
+header {
+    background: #36363e;
+}
+
+nav {
+    padding: 10px 15px;
+    display: flex !important;
+    align-items: center;
+}
+
+/*menu's line*/
+.three_line {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    background: #c1326a;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    width: 28px;
+    height: 4px;
+}
+
+.inpt_search {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #c1326a;
+    padding: 0 10px;
+    color: #fff;
+    text-align: right;
+    outline: none !important;
+}
+
+.inpt_search::placeholder {
+    color: #666773;
+    font-size: 14px;
+}
+
+/*Log nav*/
+.log_info {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle_color {
+    width: 50px;
+    height: 20px;
+    border: 1px solid #c1326a;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.toggle_color:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ca4275;
+    position: absolute;
+    left:1px;
+    align-self: center;
+}
+/*user_log*/
+.img_log{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ca4275;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_user{
+    width: 50px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+
+}
